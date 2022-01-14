@@ -9,7 +9,7 @@ from PyQt5.QtCore import QTimer, Qt
 class AppDemo(QWidget):
     def __init__(self):
         super().__init__()
-        self.currentDir = os.getcwd()
+        self.currentDir = os.path.dirname(__file__)
         self.setWindowTitle("Kedbin's Pomodoro App")
 
         self.counter = 0
